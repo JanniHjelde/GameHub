@@ -134,7 +134,7 @@ label {
 /*------login page -----*/
 .form {
   display: block;
-  max-width: 400px;
+  max-width: 350px;
   height: 500px;
   position: relative;
   margin: 6% auto;
@@ -319,7 +319,7 @@ h2 {
 /*------checkout success -----*/
 .mark {
   max-width: 300px;
-  margin-left: 38%;
+margin-left: 37%;
 }
 
 /*------account -----*/
@@ -387,7 +387,7 @@ h2 {
 .nav-links {
   text-align: center;
   width: 100%;
-display: none;
+  display: none;
 }
 .nav-links a {
   display: block;
@@ -397,4 +397,3 @@ display: none;
 #toggle:checked + .nav-links {
 display: block;
 }
-
