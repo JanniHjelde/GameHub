@@ -323,10 +323,10 @@ h2 {
   margin-left: 35%;
 }
 
-/*------contact -----*/
+/*------contact and sell -----*/
 .contact-form {
   width: 90%;
-  max-width: 600;
+  max-width: 600px;
   background: #fafafa;
   position: absolute;
   top: 50%;
