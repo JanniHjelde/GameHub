@@ -134,7 +134,7 @@ label {
 /*------login page -----*/
 .form {
   display: block;
-  width: 400px;
+  max-width: 400px;
   height: 500px;
   position: relative;
   margin: 6% auto;
@@ -265,6 +265,7 @@ h3 {
 /*------checkout -----*/
 .cart-page {
   margin: 80px auto;
+  max-width: 100%;
 }
 table {
   width: 100%;
@@ -273,6 +274,7 @@ table {
 .cart-info {
   display: flex;
   flex-wrap: wrap;
+  max-width: 100%;
 }
 th {
   text-align: left;
@@ -290,8 +292,8 @@ td input {
   padding: 5px;
 }
 td img {
-  width: 200px;
-  height: 250px;
+  max-width: 200px;
+  max-height: 250px;
   margin-right: 10px;
   object-fit: cover;
 }
@@ -299,18 +301,19 @@ td img {
 .checkinf {
   display: flex;
   flex-direction: column;
-  margin-left: 46%;
+  margin: auto;
   border: none;
   appearance: none;
-  padding: 12px;
+  padding: 25px;
   border-radius: 3px;
-  width: 250px;
+  width: 100%;
   outline: none;
   background: #fafafa;
 }
 
 h2 {
-  text-align: center;
+  margin: auto;
+  padding: 25px;
 }
 
 /*------checkout success -----*/
@@ -340,13 +343,11 @@ h2 {
 /*------contact and sell -----*/
 .contact-form {
   width: 90%;
-  max-width: 600px;
   background: #fafafa;
-  position: absolute;
+  position: fixed;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  padding: 50;
   box-sizing: border-box;
   text-align: center;
 }
@@ -358,7 +359,7 @@ h2 {
 .txtbox {
   border: 1px #1b223b;
   margin: 8px 0;
-  padding: 12px 18px;
+  
 }
 
 .txtbox label {
@@ -397,8 +398,3 @@ display: none;
 display: block;
 }
 
-.cart,
-.searchicon {
-  display: flex;
-  flex-wrap: wrap;
-}
