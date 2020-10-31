@@ -1,51 +1,309 @@
 body {
-  background-color: #1B223B;
-  width: 100%;
-  margin: 0;
-  font-family: 'Montserrat', sans-serif;
-  font-size: 14px; 
+  background-color: #1b223b;
+  font-family: "Montserrat", arial, sans-serif;
+  font-weight: 400;
 }
 
-.content, footer {
-  background-color: white;
-  margin: 0 10rem;
+main {
+  display: inline-block;
+  background-color: #fafafa;
+  width: 90%;
+  margin-left: 5%;
+}
+/*------index page -----*/
+.container {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-gap: 25px;
+  padding: 25px;
+}
+
+.game-tiles {
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.1);
+  height: 100%;
+}
+
+.game-image {
+  width: 100%;
+  height: 12rem;
+  object-fit: cover;
+  display: block;
+}
+
+.game-content {
+  line-height: 1.5;
+  font-size: 0.9em;
+  padding: 15px;
+  background: white;
+}
+
+.addcart {
+  background-color: #1b223b;
+  color: white;
+  text-transform: uppercase;
+  padding: 0.5em 1em;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  width: 100%;
+}
+
+.addcart:hover {
+  background-color: #e99540;
+}
+
+/*------nav bar -----*/
+.nav-link {
+  background-color: #1b223b;
+  color: white;
+  text-transform: uppercase;
+  text-decoration: none;
+  text-align: center;
+  list-style: none;
+  width: 200px;
+  padding: 10px 28px;
+  border-radius: 25px;
+}
+.nav-link:hover {
+  background-color: #e99540;
+  text-decoration: none;
+}
+
+h1 {
+  text-transform: uppercase;
+  text-decoration: bold;
+  text-align: center;
+}
+
+header {
+  position: sticky;
+  top: 0;
+  display: flex;
+  background-color: #fafafa;
+  justify-content: space-around;
+  width: 90%;
+  margin: auto;
+  height: 10vh;
+  align-items: center;
+}
+
+.logo,
+.nav-links,
+.cart {
+  display: flex;
 }
 
 .logo {
-  max-height: 100px;
-  padding: 10px 20px;
+  max-width: 120px;
+  padding: 20px 20px;
+  flex: 1;
 }
 
-nav ul {
-margin: 0px;
-list-style: none;
+nav {
+  flex: 2;
 }
 
-nav li {
-display: inline-block;
-margin-left: 100px;
-text-align: center;
+.nav-links {
+  justify-content: space-around;
+  list-style: none;
 }
 
-nav a, .container {
-color: #1B223B;
-text-decoration: none;
-text-transform: uppercase;
+.cart,
+.searchicon {
+  max-width: 30px;
+  flex: 1;
+  padding-right: 25px;
+  justify-content: flex-end;
 }
 
-.container {
-  display: flex;
-  margin: 0 20rem;
-}
-
-.item {
-  margin: 10px;
-  flex: 3;
-}
-
-footer {
-  color: #1B223B;
-  padding: 10px;
+a:link,
+a:visited {
   text-decoration: none;
+}
+
+/*------login page -----*/
+.form {
+  display: block;
+  width: 400px;
+  height: 500px;
+  position: relative;
+  margin: 6% auto;
+  background: #fafafa;
+  padding: 5px;
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+.button-box {
+  width: 280px;
+  margin: 35px auto;
+  position: relative;
+  border-radius: 30px;
+}
+
+.toggle {
+  padding: 10px 30px;
+  cursor: pointer;
+  background: transparent;
+  border: 0;
+  outline: none;
+  position: relative;
+}
+
+#btn {
+  top: 0;
+  left: 0;
+  position: absolute;
+  width: 110px;
+  height: 100%;
+  background: #e99540;
+  border-radius: 30px;
+  transition: 0.3s;
+}
+
+.input-grp {
+  top: 120px;
+  position: absolute;
+  width: 280px;
+  transition: 0.3s;
+}
+
+.input-field {
+  width: 100%;
+  padding: 10px 0;
+  margin: 5px 0;
+  border-left: 0;
+  border-top: 0;
+  border-right: 0;
+  border-bottom: 3px #e99540;
+  outline: none;
+  background: transparent;
+}
+
+.submit-btn,
+.add2 {
+  text-align: center;
+  color: white;
+  width: 85%;
+  padding: 10px 30px;
+  display: block;
+  margin: auto;
+  background: #e99540;
+  border: 0;
+  outline: none;
+  border-radius: 30px;
+}
+
+.check {
+  margin: 30px 10px 30px 0;
+}
+
+span {
+  color: #1b223b;
   font-size: 12px;
+  bottom: 68px;
+  position: absolute;
+}
+
+#login {
+  left: 50px;
+}
+
+#register {
+  left: 450px;
+}
+
+/*------gamepage -----*/
+.gamepagecard {
+  margin: 2rem 0;
+}
+
+.gamepagecard .n4s {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 20px;
+  align-items: center;
+  justify-content: center;
+}
+
+.n4simg {
+  max-width: 700px;
+  padding: 20px;
+}
+.n4s {
+  padding: 20px;
+  align-content: center;
+}
+
+h3 {
+  text-align: center;
+}
+
+/*------checkout -----*/
+.cart-page {
+  margin: 80px auto;
+}
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+.cart-info {
+  display: flex;
+  flex-wrap: wrap;
+}
+th {
+  text-align: left;
+  padding: 5px;
+  text-transform: uppercase;
+  color: white;
+  background: #e99540;
+}
+td {
+  padding: 20px;
+}
+td input {
+  width: 40px;
+  height: 30px;
+  padding: 5px;
+}
+td img {
+  width: 200px;
+  height: 250px;
+  margin-right: 10px;
+  object-fit: cover;
+}
+
+.checkinf {
+  display: flex;
+  flex-direction: column;
+  margin-left: 46%;
+  border: none;
+  appearance: none;
+  padding: 12px;
+  border-radius: 3px;
+  width: 250px;
+  outline: none;
+  background: #fafafa;
+}
+
+h2 {
+  text-align: center;
+}
+
+/*------checkout success -----*/
+.mark {
+  max-width: 300px;
+  margin-left: 38%;
+}
+
+/*------media only -----*/
+@media only screen and (max-width: 750px) {
+  .container {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+  }
+  .nav {
+    display: flex;
+  }
 }
