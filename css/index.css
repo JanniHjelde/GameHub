@@ -79,8 +79,8 @@ nav {
 a:link,
 a:visited {
   text-decoration: none;
-  color: white;
 }
+
 /*------index page -----*/
 .container {
   display: grid;
@@ -187,13 +187,13 @@ a:visited {
 .add2,
 .sendcontact {
   text-align: center;
-  color: white;
   width: 85%;
   padding: 10px 30px;
   display: block;
   margin: auto;
   background: #1b223b;
   border: 0;
+  color: white;
   outline: none;
   border-radius: 30px;
 }
@@ -202,6 +202,12 @@ a:visited {
 .add2:hover,
 .sendcontact:hover {
   background: #e99540;
+}
+
+.submit-btn a:visited,
+.add2 a:visited,
+.sendcontact a:visited {
+  color: white;
 }
 
 .check {
