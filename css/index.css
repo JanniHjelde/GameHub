@@ -250,7 +250,7 @@ span {
 }
 
 .n4simg {
-  max-width: 700px;
+  max-width: 650px;
   padding: 20px;
 }
 .n4s {
@@ -259,7 +259,7 @@ span {
 }
 
 h3 {
-  text-align: center;
+  text-align: left;
 }
 
 /*------checkout -----*/
@@ -377,23 +377,29 @@ margin-left: 37%;
 
 /*------media only -----*/
 @media only screen and (max-width: 1040px) {
+  label {
+    display: block; 
+    cursor: pointer;
+  }
+ .nav-links {
+   text-align: center;
+   width: 100%;
+   display: none;
+   margin-bottom: 10px;
+ }
+ .nav-links a {
+   display: block;
+   margin: 0;
+ }
+ #toggle:checked + .nav-links {
+ display: block;
+ }
+
   .container {
     display: inline;
+    margin-bottom: 5px;
   }
- label {
-   display: block; 
-   cursor: pointer;
- }
-.nav-links {
-  text-align: center;
-  width: 100%;
-  display: none;
-}
-.nav-links a {
-  display: block;
-  border-bottom: 1px solid #1b223b;
-  margin: 0;
-}
-#toggle:checked + .nav-links {
-display: block;
+
+.gamepagecard {
+  display: inline-block;
 }
