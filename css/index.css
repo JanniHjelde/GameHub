@@ -272,7 +272,7 @@ h3 {
   max-width: 100%;
 }
 table {
-  max-width: 100%;
+  width: 100%;
   border-collapse: collapse;
 }
 .cart-info {
@@ -323,7 +323,8 @@ h2 {
 /*------checkout success -----*/
 .checkmark {
   max-width: 30%;
-  margin: auto;
+  padding: 30px;
+  margin-left: 30%;
 }
 
 /*------account -----*/
@@ -363,7 +364,6 @@ h2 {
 .txtbox {
   border: 1px #1b223b;
   margin: 8px 0;
-  
 }
 
 .txtbox label {
@@ -381,30 +381,31 @@ h2 {
 
 /*------media only -----*/
 @media only screen and (max-width: 1040px) {
+  #toggle:checked + .nav-links {
+    display: block;
+  }
   label {
-    display: block; 
+    display: block;
     cursor: pointer;
   }
- .nav-links {
-   text-align: center;
-   width: 100%;
-   display: none;
-   margin-bottom: 10px;
- }
- .nav-links a {
-   display: block;
-   margin: 0;
- }
- #toggle:checked + .nav-links {
- display: block;
- }
+  .nav-links {
+    text-align: center;
+    width: 100%;
+    display: none;
+    margin-bottom: 10px;
+  }
+  .nav-links a {
+    display: block;
+    margin-bottom: 10px;
+  }
 
   .container {
     display: inline;
     margin-bottom: 5px;
   }
 
-.n4s, .n4sinfo {
-  display: inline;
+  .n4s,
+  .n4sinfo {
+    display: inline;
+  }
 }
-
