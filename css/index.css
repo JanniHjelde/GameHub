@@ -194,7 +194,7 @@ label {
 .add2,
 .sendcontact {
   text-align: center;
-  width: 85%;
+  max-width: 55%;
   padding: 10px 30px;
   display: block;
   margin: auto;
@@ -243,15 +243,19 @@ span {
 
 .gamepagecard .n4s {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-gap: 20px;
   align-items: center;
   justify-content: center;
 }
 
+.n4sinfo {
+  max-width: 400px;
+  margin: auto;
+}
+
 .n4simg {
-  max-width: 650px;
+  max-width: 80%;
   padding: 20px;
+  margin: auto;
 }
 .n4s {
   padding: 20px;
@@ -264,11 +268,11 @@ h3 {
 
 /*------checkout -----*/
 .cart-page {
-  margin: 80px auto;
+  margin: 20px auto;
   max-width: 100%;
 }
 table {
-  width: 100%;
+  max-width: 100%;
   border-collapse: collapse;
 }
 .cart-info {
@@ -317,9 +321,9 @@ h2 {
 }
 
 /*------checkout success -----*/
-.mark {
-  max-width: 300px;
-margin-left: 37%;
+.checkmark {
+  max-width: 30%;
+  margin: auto;
 }
 
 /*------account -----*/
@@ -400,6 +404,7 @@ margin-left: 37%;
     margin-bottom: 5px;
   }
 
-.gamepagecard {
-  display: inline-block;
+.n4s, .n4sinfo {
+  display: inline;
 }
+
